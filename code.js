@@ -31,11 +31,13 @@ function renderTeams(data){
     console.log(data)
     data.data.forEach(data => {
         let teamHeader = document.createElement("h1")
+        let dropDown = document.createElement("select")
         let teamContainer = document.createElement("div")
-        teamContainer.id = data.name
+        teamContainer.className = data.name
+        dropDown.id = data.name
         teamHeader.innerText = data.name
         teamContainer.append(teamHeader)
-        head.append(teamContainer)    
+        head.append(teamContainer, dropDown)    
     })
 
 }
@@ -45,7 +47,7 @@ function renderTeams(data){
 function displayPlayers(data){
     console.log(data)
     data.data.forEach( data => {
-        let playerName = document.createElement("h3")
+        let playerName = document.createElement("option")
         playerName.innerHTML  =  `${data.first_name}` +  " " + `${data.last_name}`
         document.getElementById(data.team.name).append(playerName)
     })
