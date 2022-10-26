@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script defer src = "code.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="newcode.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Something Different</title>
 </head>
-<body>
-    <div id="main">
-        Hello world
-    </div>
 
-    <div id ="header">
-        <h1 id="pageHeader">NBA Season 2021/2022</h1>
+<body>
+    <div id="header">
+        <p class="dropbtn">Select A Team</p>
+        <!-- <div id = "dropdowncontent"></div> -->
+        <select name="teams" id="dropdowncontent" onchange="changeTeam(this.value);">
+        </select>
+        <h1>Team Information</h1>
+        <p id="PG"></p>
+        <p id="SG"></p>
+        <p id="SF"></p>
+        <p id="PF"></p>
+        <p id="C"></p>
     </div>
-    
+    <div class="dotPG"></div>
+    <div class="dotSG"></div>
+    <div class="dotSF"></div>
+    <div class="dotPF"></div>
+    <div class="dotC"><span class = "playerName">Danny </span></div>
 </body>
+
 </html>
