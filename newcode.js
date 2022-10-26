@@ -2,12 +2,14 @@ teams = []
 
 fetch("http://localhost:3000/teams")
     .then((res) => res.json())
+    .then(data => {
+        teams = data;
+    })
     .then((data) => populateTeams(data))
 
 
 
 function populateTeams(data){
-    teams = data;
     data.forEach(teams => {
         let teamDrop = document.createElement("a")
         teamDrop.innerText = teams.Team
@@ -24,7 +26,7 @@ function populateTeams(data){
             
         })
     })
-    // .then(() => populateTeams())
+    .then(() => populateTeams())
 }
 
 function populateTeams() {
