@@ -14,15 +14,26 @@
     <div id="header">
         <p class="dropbtn">Select A Team</p>
         <!-- <div id = "dropdowncontent"></div> -->
+    </div>
+    <div id = "select-info">
         <select name="teams" id="dropdowncontent" onchange="changeTeam(this.value);">
         </select>
+        <div id = "teaminformation">
         <h1>Team Information</h1>
         <p id ="PG"></p>
         <p id ="SG"></p>
         <p id ="SF"></p>
         <p id ="PF"></p>
         <p id = "C"></p>
-        <p id = "SalaryCap"></p>
+        </div>
+    </div>
+    <p id = "SalaryCap"></p>
+        <div id = "brandsalary">
+            <img id = "image" width="30" height="150" src = "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/1200px-Atlanta_Hawks_logo.svg.png" >
+            <p id = "playersalary"></p>
+        </div>
+
+        
     </div>
     <div class="dotPG"></div>
     <div class="dotSG"></div>
@@ -30,5 +41,4 @@
     <div class="dotPF"></div>
     <div class="dotC"><span class = "playerName">Danny </span></div>
 </body>
-
 </html>

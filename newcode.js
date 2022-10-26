@@ -1,5 +1,3 @@
-teams = []
-
 fetch("http://localhost:3000/teams")
     .then((res) => res.json())
     .then(data => {
@@ -16,6 +14,7 @@ function populateTeams(data){
         document.getElementById("dropdowncontent").append(teamDrop)
         teamDrop.addEventListener("click", () => {
             console.log("hey")
+            document.getElementById("image").src = teams.Team_Logo
             document.getElementById("PG").innerText = "Starting Point Guard " + teams.PG
             document.getElementById("SG").innerText = "Starting Shooting Guard " + teams.SG
             document.getElementById("SF").innerText = "Starting Small Forward " + teams.SF
@@ -44,9 +43,54 @@ function changeTeam(index) {
 } 
 
 function populatePlayers(newTeam) {
-    document.getElementById("PG").innerText = newTeam.PG
-    document.getElementById("SG").innerText = newTeam.SG
-    document.getElementById("SF").innerText = newTeam.SF
-    document.getElementById("PF").innerText = newTeam.PF
-    document.getElementById("C").innerText = newTeam.C
+    document.getElementById("image").src = newTeam.Team_Logo
+    document.getElementById("PG").innerHTML =  "<b> Starting Point Guard: </b> " +  newTeam.PG
+    document.getElementById("SG").innerHTML = "<b> Starting Shooting Guard: </b> " + newTeam.SG
+    document.getElementById("SF").innerHTML = "<b> Starting Small Forward: </b> " + newTeam.SF
+    document.getElementById("PF").innerHTML = "<b>Starting Power Forward: </b>" + newTeam.PF
+    document.getElementById("C").innerHTML = "<b>Starting Center: </b>" + newTeam.C
+    let salary = `${parseFloat(newTeam.C_Salary) + parseFloat(newTeam.PF_Salary) + parseFloat(newTeam.SF_Salary) + parseFloat(newTeam.SG_Salary) +  parseFloat(newTeam.PG_Salary) }`
+    document.getElementById("SalaryCap").innerText = "Starters Salary Cap = $" + salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+
+function fillSalary(newTeam){
+    document.getElementById("PG").addEventListener("click", (e) => {
+        console.log(e)
+        document.getElementById("playersalary").innerText = newTeam.PG_Salary
+})
+document.getElementById("SG").addEventListener("click", (e) => {
+        console.log(e)
+})
+document.getElementById("SF").addEventListener("click", (e) => {
+        console.log(e)
+})
+document.getElementById("PF").addEventListener("click", (e) => {
+        console.log(e)
+})
+document.getElementById("C").addEventListener("click", (e) => {
+        console.log(e)
+})
+
+}
+
+// document.getElementById("PG").addEventListener("click", (e) => {
+//     console.log(e)
+//     document.getElementById("playersalary").innerText = newTeam.PG_Salary
+// })
+// document.getElementById("SG").addEventListener("click", (e) => {
+//     console.log(e)
+// })
+// document.getElementById("SF").addEventListener("click", (e) => {
+//     console.log(e)
+// })
+// document.getElementById("PF").addEventListener("click", (e) => {
+//     console.log(e)
+// })
+// document.getElementById("C").addEventListener("click", (e) => {
+//     console.log(e)
+// })
+
+
+
+

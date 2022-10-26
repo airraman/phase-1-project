@@ -80,3 +80,42 @@ html {
     bottom: 10px;
   }
 
+
+  #brandsalary{
+    background-position: 50% 75%;
+  }
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  flex-wrap: flex;
+  object-fit: contain;
+  background-position: 50% 70%;
+  margin-top: 60px;
+}
+
+
+  #SalaryCap{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    flex-wrap: flex;
+  }
+
+
+#teaminformation h1{
+  margin-top: 0%;
+}
+
+#teaminformation{
+  margin-left: 30px;
+}
+
+#select-info{
+  display: flex;
+  align-items: flex-start;
+}
