@@ -71,8 +71,24 @@ html {
   object-fit: contain;
   background-position: 50% 70%;
   margin-top: 60px;
+  transition: all 0.2s ease-in; 
+  
 }
 
+#image:hover {
+  transform: scale(1.2);
+  margin-top: 20px;
+  cursor: url("https://cur.cursors-4u.net/sports/images2/spo145.gif"), auto;
+}
+
+
+#teamnamefill{
+text-align: center;
+}
+
+#singleplayer{
+  text-align: center;
+  }
 
   #SalaryCap{
     text-align: center;
@@ -98,5 +114,72 @@ html {
 }
 
 .playerHeadshots {
-  width: 120px;
+  width: 130px;
+  transition: all 0.2s ease-in; 
+}
+
+.playerHeadshots:hover {
+  transform: scale(1.5);
+}
+
+#starters {
+position: absolute;
+top: 50%;
+right: -5%;
+transform: translateY(-20%);
+cursor: url("https://cur.cursors-4u.net/sports/images2/spo145.gif"), auto;
+
+
+}
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+}
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+ 
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 70s infinite; }
+.hmove:hover { animation-play-state: paused; }
+
+
+#select-info{
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+
+#nbalogo {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+body {
+  cursor: url(‘https://upload.wikimedia.org/wikipedia/commons/7/7a/Basketball.png’), auto;
 }

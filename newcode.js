@@ -50,9 +50,9 @@ function populatePlayers(newTeam) {
     document.getElementById("C").innerHTML = "<b>Starting Center: </b>" + newTeam.C
     
     let salary = `${parseFloat(newTeam.C_Salary) + parseFloat(newTeam.PF_Salary) + parseFloat(newTeam.SF_Salary) + parseFloat(newTeam.SG_Salary) +  parseFloat(newTeam.PG_Salary) }`
-    document.getElementById("SalaryCap").innerText = "Starters Salary Cap = $" + salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    console.log(salary)
+    document.getElementById("SalaryCap").innerText = "Starters Salary Cap = $" + salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + 'M';
     
-
     let PGimg = document.getElementById("PG_headshot")
     PGimg.src = newTeam.PG_Headshot;
 
@@ -67,47 +67,39 @@ function populatePlayers(newTeam) {
 
     let Cimg = document.getElementById("C_headshot")
     Cimg.src = newTeam.C_Headshot;  
+
+    document.getElementById("image").addEventListener("mouseover", (e) => {
+        console.log(e)
+        document.getElementById("teamnamefill").innerText = newTeam.Team
+    })
+
+    document.getElementById("PG_headshot").addEventListener("click", (e) => {
+        console.log(e)
+        document.getElementById("singleplayer").innerHTML= `${newTeam.PG} earns $` + `<b>${newTeam.PG_Salary}</b>  ` + `annually and averages`+ `<b> ${newTeam.PG_PPG} points</b> ` + `per game`
+
+
+    })
+    document.getElementById("SG_headshot").addEventListener("click", (e) => {
+        console.log(e)
+        document.getElementById("singleplayer").innerHTML = `${newTeam.SG} earns $` + `<b>${newTeam.SG_Salary}</b> ` + `annually and averages `+ `<b>${newTeam.SG_PPG} points</b> ` + `per game`
+
+        console.log(e)
+    })
+    document.getElementById("SF_headshot").addEventListener("click", (e) => {
+        console.log(e)
+        document.getElementById("singleplayer").innerHTML = `${newTeam.SF} earns $` + `<b>${newTeam.SF_Salary} </b>` + `annually and averages `+ `<b>${newTeam.SF_PPG} points</b> ` + `per game`
+    })
+    document.getElementById("PF_headshot").addEventListener("click", (e) => {
+        console.log(e)
+        document.getElementById("singleplayer").innerHTML = `${newTeam.PF} earns $` + `<b>${newTeam.PF_Salary}</b> ` + `annually and averages `+ `<b> ${newTeam.PF_PPG} points</b>  ` + `per game`
+    })
+    document.getElementById("C_headshot").addEventListener("click", (e) => {
+        console.log(e)
+        document.getElementById("singleplayer").innerHTML = `${newTeam.C} earns $` + `<b>${newTeam.C_Salary}</b> ` + `annually and averages `+ `</> ${newTeam.C_PPG} points</b> ` + `per game`
+    })
+
  
 }
-
-
-function fillSalary(newTeam){
-    document.getElementById("PG").addEventListener("click", (e) => {
-        console.log(e)
-        document.getElementById("playersalary").innerText = newTeam.PG_Salary
-})
-document.getElementById("SG").addEventListener("click", (e) => {
-        console.log(e)
-})
-document.getElementById("SF").addEventListener("click", (e) => {
-        console.log(e)
-})
-document.getElementById("PF").addEventListener("click", (e) => {
-        console.log(e)
-})
-document.getElementById("C").addEventListener("click", (e) => {
-        console.log(e)
-})
-
-}
-
-// document.getElementById("PG").addEventListener("click", (e) => {
-//     console.log(e)
-//     document.getElementById("playersalary").innerText = newTeam.PG_Salary
-// })
-// document.getElementById("SG").addEventListener("click", (e) => {
-//     console.log(e)
-// })
-// document.getElementById("SF").addEventListener("click", (e) => {
-//     console.log(e)
-// })
-// document.getElementById("PF").addEventListener("click", (e) => {
-//     console.log(e)
-// })
-// document.getElementById("C").addEventListener("click", (e) => {
-//     console.log(e)
-// })
-
 
 
 
