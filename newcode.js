@@ -33,7 +33,6 @@ function populateTeams() {
     for (index in teams) {
         select.options[select.options.length] = new Option(teams[index].Conference + ", " + teams[index].Team, index);
     }
-
     populatePlayers(teams[0])
 }
 
@@ -49,8 +48,26 @@ function populatePlayers(newTeam) {
     document.getElementById("SF").innerHTML = "<b> Starting Small Forward: </b> " + newTeam.SF
     document.getElementById("PF").innerHTML = "<b>Starting Power Forward: </b>" + newTeam.PF
     document.getElementById("C").innerHTML = "<b>Starting Center: </b>" + newTeam.C
+    
     let salary = `${parseFloat(newTeam.C_Salary) + parseFloat(newTeam.PF_Salary) + parseFloat(newTeam.SF_Salary) + parseFloat(newTeam.SG_Salary) +  parseFloat(newTeam.PG_Salary) }`
     document.getElementById("SalaryCap").innerText = "Starters Salary Cap = $" + salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    
+
+    let PGimg = document.getElementById("PG_headshot")
+    PGimg.src = newTeam.PG_Headshot;
+
+    let SGimg = document.getElementById("SG_headshot")
+    SGimg.src = newTeam.SG_Headshot;
+
+    let SFimg = document.getElementById("SF_headshot")
+    SFimg.src = newTeam.SF_Headshot;
+
+    let PFimg = document.getElementById("PF_headshot")
+    PFimg.src = newTeam.PF_Headshot;
+
+    let Cimg = document.getElementById("C_headshot")
+    Cimg.src = newTeam.C_Headshot;  
+ 
 }
 
 

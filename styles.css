@@ -19,11 +19,6 @@ html {
    }
  
    .dotPG {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(220, 11, 182);
-    border-radius: 50%;
-    display: inline-block;
     margin-right: 420px;
     margin-top: 0px;
     float: right;
@@ -31,11 +26,6 @@ html {
   }
 
   .dotSG {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(11, 220, 213);
-    border-radius: 50%;
-    display: inline-block;
     margin-right: -120px;
     margin-top: 230px;
     float: right;
@@ -43,11 +33,6 @@ html {
   }
 
   .dotSF {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(53, 11, 220);
-    border-radius: 50%;
-    display: inline-block;
     margin-right: -120px;
     margin-top: -230px;
     float: right;
@@ -55,10 +40,6 @@ html {
   }
 
   .dotPF {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(178, 220, 11);
-    border-radius: 50%;
     margin-right: -310px;
     margin-top: 120px;
     float: right;
@@ -66,10 +47,6 @@ html {
   }
 
   .dotC {
-    height: 35px;
-    width: 35px;
-    background-color: rgb(220, 11, 11);
-    border-radius: 50%;
     margin-right: -310px;
     margin-top: -116px;
     float: right;
@@ -118,4 +95,8 @@ html {
 #select-info{
   display: flex;
   align-items: flex-start;
+}
+
+.playerHeadshots {
+  width: 120px;
 }

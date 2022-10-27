@@ -5,7 +5,7 @@
             "Team": "Atlanta Hawks",
             "Team_Logo": "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Atlanta_Hawks_logo.svg/1200px-Atlanta_Hawks_logo.svg.png",
             "C": "Clint Capela",
-            "C_Headshot": "https://images.app.goo.gl/H88Rt42DJ6CwBt816",
+            "C_Headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3102529.png",
             "C_Salary": "18,706,896",
             "C_PPG": "8",
             "PF": "John Collins",
@@ -31,7 +31,7 @@
             "Team": "Boston Celtics",
             "Team_Logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/1200px-Boston_Celtics.svg.png",
             "C": "Robert Williams III",
-            "C_Headshot": "https://images.app.goo.gl/VwQZxxUSmwnCdsMp9",
+            "C_Headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4066211.png",
             "C_Salary": "10,937,502",
             "C_PPG": "10",
             "PF": "Al Horford",
@@ -289,7 +289,7 @@
         {
             "Conference": "East",
             "Team": "Indiana Pacers",
-            "Team_Logo": "https://images.app.goo.gl/uagKBW76ziL6ryHR7",
+            "Team_Logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Indiana_Pacers.svg/1200px-Indiana_Pacers.svg.png",
             "C": "Myles Turner",
             "C_Headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3133628.png",
             "C_Salary": "18,000,000",
@@ -315,7 +315,7 @@
         {
             "Conference": "West",
             "Team": "Los Angeles Clippers",
-            "Team_Logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Indiana_Pacers.svg/1200px-Indiana_Pacers.svg.png",
+            "Team_Logo": "https://assets.stickpng.com/thumbs/58419c59a6515b1e0ad75a60.png",
             "C": "Ivica Zubac",
             "C_Headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/4017837.png",
             "C_Salary": "10,123,457",
@@ -627,7 +627,7 @@
         {
             "Conference": "West",
             "Team": "Portland Trail Blazers",
-            "Team_Logo": "https://wp.usatodaysports.com/wp-content/uploads/sites/90/2019/04/unknown-2.jpeg",
+            "Team_Logo": "https://w7.pngwing.com/pngs/267/372/png-transparent-portland-trail-blazers-utah-jazz-nba-playoffs-trail-sport-spiral-logo-thumbnail.png",
             "C": "Jusuf Nurkic",
             "C_Headshot": "https://cdn.nba.com/headshots/nba/latest/1040x760/203994.png",
             "C_Salary": "15,625,000",
@@ -679,7 +679,7 @@
         {
             "Conference": "West",
             "Team": "San Antonio Spurs",
-            "Team_Logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/San_Antonio_Spurs.svg/1200px-San_Antonio_Spurs.svg.png",
+            "Team_Logo": "https://banner2.cleanpng.com/20180406/kvw/kisspng-san-antonio-spurs-nba-san-antonio-rampage-clevelan-san-antonio-spurs-5ac83a254f2977.3178905515230715253243.jpg",
             "C": "Jakob Poeltl",
             "C_Headshot": "https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3134908.png&w=350&h=254",
             "C_Salary": "9,398,148",
